@@ -1,0 +1,46 @@
+body{
+    margin 0;
+}
+#navbar{
+    color: white;
+    background-color: #222;
+    padding: 10px;
+}
+
+.navbar-item{
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 500;
+  
+}
+
+.navbar-item:not(.site-name){
+    border-top: 1px solid rgb(163, 163, 163); 
+}
+
+.site-name{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700px;
+    padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 660px){
+    #navbar{
+        padding: 20px 10px;
+    }
+    .navbar-item{
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .site-name{
+        font-size: 20px;
+    }
+
+    .navbar-item:not(.site-name){
+        border-top: name;
+        border-left: 1px solid rgb(163, 163, 163);
+    }
+
+}
