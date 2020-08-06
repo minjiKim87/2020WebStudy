@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+}
+
+/* global */
+
+a.text {
+    color: black;
+    text-decoration: none;
+}
+
+a.text:hover {
+    color: #333;
+}
+
+/* navbar */
+
+#navbar {
+    background-color: #222222;
+    color: white;
+    padding: 8px 10px;
+}
+
+.nav-item {
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-item.logo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.nav-item:not(.logo) {
+    border-top: 1px solid rgb(131, 131, 131);
+}
+
+@media only screen and (min-width: 660px) {
+    #navbar {
+        padding: 20px 8px;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .nav-item.logo {
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    .nav-item:not(.logo) {
+        border-top: none;
+        border-left: 1px solid rgb(131, 131, 131);
+    }
+}
+
+#main {
+    padding: 30px 10px;
+}
+
+#board-name{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.article-table{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
+
+.article-row{
+   padding: 8px 4px;
+   border-top: 1px solid gray;
+
+}
+
+.article-row{
+    padding: 8px 4px;
+}
+
+.article-id{
+    display: none;
+}
+
+.article{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:8px;
+
+}
+
+.article-author {
+    display: inline-block;
+ }
+
+ .article-delimiter {
+    display: inline-block;
+ }
+
+.article-created-at{
+   display: inline-block;
+}
+
+@media only screen and (min-width: 660px){
+    #main{
+        padding : 30px;
+    }
+
+    .article-row{
+        font-size: 0;
+    }
+
+    .article-row.head{
+        display: block;
+    }
+
+    .article-row:nth-child(2n+1){
+        background-color: lightgray;
+    }
+
+    .article-id{
+        width: 10%;
+        font-size:16px;
+        display: inline-block;
+    }
+
+    .article-title{
+        width: 50%;
+        display: inline-block;
+        font-weight: normal;
+        margin-bottom: 0;
+
+    }
+
+    .article-author{
+        width: 20%;
+    }
+
+    .article-delimiter{
+        display: none;
+    }
+
+    article-created-at{
+        width: 20%
+    }
+}
+
+.reg-row{
+    margin: 20px 0;
+}
+
+.reg-label{
+    margin-bottom: 10px;
+}
+
+.reg-input>input{
+    width: calc(100%-8px);
+}
+
+.reg-note{
+    color: darkblue;
+}
+
+.reg-input>textarea{
+    height:200px;
+    width: calc(100%-6px);
+    resize: vertical;
+}
+
+#button{
+    text-align: center;
+}
+
